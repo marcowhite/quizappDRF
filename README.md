@@ -1,9 +1,9 @@
 # quizappDRF
 quiz app django rest api
 
-run venv from scripts folder then
-
 ## run django server
+
+activate virtualenv from scripts folder
 
 ```
 python manage.py runserver
