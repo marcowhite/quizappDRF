@@ -1,7 +1,27 @@
 # quizappDRF
 quiz app django rest api
 
+run venv from scripts folder then
+
+## run django server
+
+```
+python manage.py runserver
+```
 includes admin panel with quiz creation
+
+superuser 
+```
+username: yom
+
+password: adminadmin
+```
+
+qiuz get api is working
+
+go to api/quiz/ to get all quizes
+
+go to api/quiz/q/<quizname> to get all questions related to quiz
 
 quizresults api in progress
 
