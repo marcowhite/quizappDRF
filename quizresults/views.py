@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Results,QuizUser
+from .models import Result,QuizUser
 from .serializers import QuizUserSerializer,ResultSerializer
 # Create your views here.
 from rest_framework.response import Response
