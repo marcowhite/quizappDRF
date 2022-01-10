@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import Results,QuizUser
+from .models import Result,QuizUser
+from quiz.serializers import AnswerSerializer
 
 
 class QuizUserSerializer(serializers.ModelSerializer):
@@ -12,10 +13,13 @@ class QuizUserSerializer(serializers.ModelSerializer):
 
 class ResultSerializer(serializers.HyperlinkedModelSerializer):
 
+    user = QuizUserSerializer(read_only=True)
+    answer = AnswerSerializer(read_only=True)
+
     class Meta:
 
-        model = Results
+        model = Result
         fields = [
-            'user_id',
+            'user',
             'answer',
         ]

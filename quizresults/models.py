@@ -3,11 +3,12 @@ from quiz.models import Answer
 # Create your models here.
 
 class QuizUser(models.Model):
+    user_id = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return self.name + "(" + self.user_id+ + ")"
 
-class Results(models.Model):
-    user_id = models.ForeignKey(QuizUser, on_delete=models.CASCADE)
+class Result(models.Model):
+    user = models.ForeignKey(QuizUser, on_delete=models.CASCADE)
     answer = models.ForeignKey(Answer, on_delete=models.CASCADE)
