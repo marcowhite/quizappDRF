@@ -33,6 +33,7 @@ CORS_ORIGINS_ALLOW_ALL = True
 
 INSTALLED_APPS = [
     'quiz',
+    'quizresults',
     'rest_framework',
     'corsheaders',
     'django.contrib.admin',

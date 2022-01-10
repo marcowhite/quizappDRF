@@ -11,5 +11,3 @@ class QuizUser(models.Model):
 class Results(models.Model):
     user_id = models.ForeignKey(QuizUser, on_delete=models.CASCADE)
     answer = models.ForeignKey(Answer, on_delete=models.CASCADE)
-    def __str__(self):
-        return self.answer

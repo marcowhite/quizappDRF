@@ -14,7 +14,7 @@ class ResultSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
 
-        model = Answer
+        model = Results
         fields = [
             'user_id',
             'answer',
