@@ -21,7 +21,7 @@ qiuz get api is working
 
 go to api/quiz/ to get all quizes
 
-go to api/quiz/q/(name of quiz) to get all questions related to quiz
+go to api/quiz/q/(name of quiz) to get all questions and answers related to quiz
 
 quizresults api in progress
 
